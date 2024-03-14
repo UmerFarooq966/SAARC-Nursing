@@ -1,33 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAARC - Home</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <script
+      src="https://kit.fontawesome.com/81b2a91ac0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
-    <nav id="navbar">
-        <div class="flex flex-row justify-between align-middle bg-[#F3F7FA] py-[16px] px-[128px] ">
-            <div>
-                <img src="../images/Logo.png" alt="Logo">
-            </div>
-            <div id="menu" class=" sm:hidden  md:flex md:flex-row md:gap-6">
-                <button>Services</button>
-                <button>Countries</button>
-                <button>Immigration</button>
-                <button>About</button>
-                <button>Contact</button>
-            </div>
-            <div id="Actions">
-                <button>Login</button>
-                <button>Register</button>
-            </div>
+  <body>
+    <nav id="navbar" class="font-Inter font-medium z-20">
+      <div
+        class="flex flex-row justify-between align-middle bg-bgBlue py-[16px] px-[128px]"
+      >
+        <!-- LOGO -->
+        <div>
+          <img src="../images/Logo.png" class="max-w-60" alt="Logo" />
         </div>
+        <!-- Menu -->
+        <div
+          id="menu"
+          class="sm:hidden md:flex md:flex-row md:gap-4 md:self-center"
+        >
+          <a
+            href="#"
+            class="hover:duration-600 ease-in-out hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Countries</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Immigration</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >About</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Contact</a
+          >
+        </div>
+        <!-- Actions -->
+        <div id="Actions" class="self-center flex gap-x-6">
+          <a href="">
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full hover:ease-in-out hover:duration-500 focus:outline-none focus:ring focus:ring-blue-200"
+            >
+              Login
+            </button>
+          </a>
+          <a href="">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 border border-blue-700 rounded-full"
+            >
+              Register
+            </button></a
+          >
+        </div>
+      </div>
     </nav>
 
-</body>
+    <!-- Hero -->
+    <section id="hero" class="bg-[#F3F7FA] pt-14">
+      <div class="grid grid-cols-2 mx-16">
+        <!-- Content -->
+        <div class="ml-28 my-10">
+          <h1 class="font-Syne font-bold text-7xl text-primaryBlue">
+            The global voice of nursing
+          </h1>
+          <p class="font-Inter text-textPrimary text-base pt-4">
+            Welcome to our exclusive platform that bridges the gap between
+            hospitals and dedicated nurses. Whether you’re a healthcare
+            institution seeking skilled professionals or a nurse looking for
+            your next fulfilling role, we’ve got you covered.
+          </p>
+          <button
+            class="mt-4 bg-btnBg hover:bg-gray-500 text-white hover:text-white py-3 px-5 border border-gray-300 hover:border-transparent rounded-full hover:ease-in-out hover:duration-500 focus:outline-none focus:ring focus:ring-gray-300"
+          >
+            Browse Jobs
+          </button>
+          <!-- partners with -->
+          <div id="partners">
+            <h2 class="font-Syne font-bold text-2xl text-textSecondary mt-10">
+              Partners with:
+            </h2>
+            <img src="../images/partners.png" class="mt-2" alt="" />
+          </div>
+        </div>
+        <!-- Hero Image -->
+        <div class="-ml-52">
+          <img src="../images/hero.png" class="h-auto max-w-4xl" alt="" />
+        </div>
+      </div>
+    </section>
 
+    <!-- CTA -->
+    <section id="Call-to-action">
+      <div class="grid grid-cols-2 py-12 px-32">
+        <!-- Images -->
+        <div>
+          <img src="../images/cta.png" alt="" />
+        </div>
+        <!-- Content -->
+        <div class="self-center">
+          <h2 class="font-Syne font-bold text-3xl text-primaryBlue">
+            Across borders, healing hands wander.
+          </h2>
+          <p class="font-Inter text-textPrimary text-base pt-4">
+            Welcome to our platform, where healthcare institutions and
+            compassionate nurses converge. Hospitals can easily register and
+            announce vacancies, while nurses and nursing agencies provide their
+            credentials. Our system ensures efficient matching, notifying
+            eligible nurses of relevant opportunities. Join us in
+            revolutionising healthcare recruitment!
+          </p>
+          <button
+            class="mt-4 bg-primaryBlue hover:bg-blue-500 text-white hover:text-white py-3 px-5 border border-blue-300 hover:border-transparent rounded-full hover:ease-in-out hover:duration-500 focus:outline-none focus:ring focus:ring-blue-300"
+          >
+            Find jobs you're looking for
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-bgBlue">
+      <div class="py-12 px-32 text-center">
+        <!-- heading -->
+        <h2 class="font-Syne font-bold text-5xl text-primaryBlue">
+          Our Key Features
+        </h2>
+        <!-- Feature cards -->
+        <div class="flex justify-center gap-20 py-20">
+          <!-- Card 1 -->
+          <div class="flex flex-col gap-3 max-w-[25%] text-left">
+            <!-- Icons -->
+            <div class="text-primaryBlue">
+              <i
+                class="fa fa-money fa-lg p-2 py-4 border border-solid border-primaryBlue rounded-lg"
+              ></i>
+            </div>
+            <h3 class="font-Syne font-bold">Competitive Salary</h3>
+            <p
+              class="font-Inter text-sm text-textPrimary border-l-4 pl-2 border-primaryBlue"
+            >
+              We believe in recognising your expertise and dedication. Our
+              hospitals offer competitive compensation packages, ensuring your
+              hard work is rewarded.
+            </p>
+          </div>
+          <!-- Card 2-->
+          <div class="flex flex-col gap-3 max-w-[25%] text-left">
+            <!-- Icons -->
+            <div class="text-primaryBlue">
+              <i
+                class="fa fa-home fa-lg p-2 py-4 border border-solid border-primaryBlue rounded-lg"
+              ></i>
+            </div>
+            <h3 class="font-Syne font-bold">Housing Assistance</h3>
+            <p
+              class="font-Inter text-sm text-textPrimary border-l-4 pl-2 border-primaryBlue"
+            >
+              Moving to a new location for work? No worries! We provide housing
+              assistance, making your transition smoother. Focus on healing;
+              we’ll handle the logistics.
+            </p>
+          </div>
+          <!-- Card 3-->
+          <div class="flex flex-col gap-3 max-w-[25%] text-left">
+            <!-- Icons -->
+            <div class="text-primaryBlue">
+              <i
+                class="fa fa-heart fa-lg p-2 py-4 border border-solid border-primaryBlue rounded-lg"
+              ></i>
+            </div>
+            <h3 class="font-Syne font-bold">Health Benefits</h3>
+            <p
+              class="font-Inter text-sm text-textPrimary border-l-4 pl-2 border-primaryBlue"
+            >
+              Your well-being matters. Enjoy comprehensive health benefits,
+              including medical insurance, wellness programs, and access to
+              healthcare facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Compassion -->
+    <section id="compassion" class="bg-bgBlue">
+      <div class="py-12 px-32 text-center">
+        <h2 class="font-Syne font-bold text-5xl text-primaryBlue">
+          Compassion Takes Flight
+        </h2>
+        <p class="font-Inter text-sm font-semibold text-textSecondary py-3">
+          Remember, you’re not just a nurse; you’re part of our resilient,
+          caring community
+        </p>
+      </div>
+      <!--Stack 1  -->
+      <div class="flex felx-row mx-20 -mt-10 justify-evenly align-middle">
+        <div class="self-center">
+          <img
+            src="../images/hand-heart.svg"
+            class="w-auto self-center max-w-80 drop-shadow-lg"
+            alt="heart on hand"
+          />
+        </div>
+        <!-- details -->
+        <div class="max-w-[45%] mt-28">
+          <h3 class="font-Syne font-semibold text-2xl text-textPrimary pb-3">
+            Your Well-Being Matters
+          </h3>
+          <p class="font-Inter text-sm text-textSecondary">
+            Your health and happiness matter to us. Our dedicated team ensures
+            you have access to quality healthcare, mental health resources, and
+            a nurturing environment. Because a healthy nurse is a compassionate
+            healer.
+          </p>
+        </div>
+      </div>
+      <!--Stack 2  -->
+      <div class="flex felx-row mx-20 -mt-10 justify-evenly align-middle">
+        <!-- details -->
+        <div class="max-w-[45%] mt-28">
+          <h3 class="font-Syne font-semibold text-2xl text-textPrimary pb-3">
+            Your Home Away from Home
+          </h3>
+          <p class="font-Inter text-sm text-textSecondary">
+             We understand that being in a foreign land can be daunting. Rest
+            assured, we’re more than just a job platform. We’re your support
+            system, ensuring you feel at home even when miles away. From
+            cultural integration to emotional well-being, we’ve got your back.
+          </p>
+        </div>
+        <div class="self-center">
+          <img
+            src="../images/home.svg"
+            class="w-auto self-center max-w-80 drop-shadow-lg"
+            alt="heart on hand"
+          />
+        </div>
+      </div>
+      <!--Stack 3  -->
+      <div class="flex felx-row mx-20 -mt-10 justify-evenly align-middle">
+        <div class="self-center">
+          <img
+            src="../images/globe.png"
+            class="w-auto self-center max-w-80 drop-shadow-lg"
+            alt="heart on hand"
+          />
+        </div>
+        <!-- details -->
+        <div class="max-w-[45%] mt-28">
+          <h3 class="font-Syne font-semibold text-2xl text-textPrimary pb-3">
+            Navigating Cultural Curves
+          </h3>
+          <p class="font-Inter text-sm text-textSecondary">
+            Moving to a new country means adapting to new customs, languages,
+            and social norms. We’re here to guide you through these cultural
+            curves. From local cuisine recommendations to understanding local
+            holidays, consider us your cultural compass.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- How to process -->
+    <section id="How-to-process" class="pb-12">
+      <div class="py-12 px-32 text-center">
+        <h2 class="font-Syne font-bold text-5xl text-primaryBlue">
+          How it Works
+        </h2>
+      </div>
+      <!-- Frame -->
+      <div class="flex flex-col md:flex-row px-32 gap-16">
+        <!-- cards 1-->
+        <div class="flex flex-col justify-center align-middle">
+          <!-- image -->
+          <img
+            src="../images/register.svg"
+            class="max-w-[200px] self-center"
+            alt=""
+          />
+          <!-- details -->
+          <div class="max-w-[266px]">
+            <h3 class="font-Syne font-semibold text-[23px] text-textPrimary">
+              1. Register
+            </h3>
+            <p class="font-Inter text-[16px] text-textSecondary">
+              Begin your journey by registering on our platform. Create your
+              profile, share your qualifications, and let us know your
+              aspirations. Your healing hands matter to us.
+            </p>
+          </div>
+        </div>
+        <!-- cards 2-->
+        <div class="flex flex-col justify-center align-middle">
+          <!-- image -->
+          <img
+            src="../images/interview.svg"
+            class="max-w-[200px] self-center"
+            alt=""
+          />
+          <!-- details -->
+          <div class="max-w-[266px]">
+            <h3 class="font-Syne font-semibold text-[23px] text-textPrimary">
+              2. Interview
+            </h3>
+            <p class="font-Inter text-[16px] text-textSecondary">
+              Our team will reach out for a virtual interview. We want to
+              understand your skills, experiences, and the passion that fuels
+              your care. Let’s connect beyond resumes.
+            </p>
+          </div>
+        </div>
+        <!-- cards 3-->
+        <div class="flex flex-col justify-center align-middle">
+          <!-- image -->
+          <img
+            src="../images/selection.svg"
+            class="max-w-[200px] self-center"
+            alt=""
+          />
+          <!-- details -->
+          <div class="max-w-[266px]">
+            <h3 class="font-Syne font-semibold text-[23px] text-textPrimary">
+              3. Selection
+            </h3>
+            <p class="font-Inter text-[16px] text-textSecondary">
+              If you’re selected, congratulations! We match your expertise with
+              hospital vacancies. Expect personalized guidance as we find the
+              perfect fit for you.
+            </p>
+          </div>
+        </div>
+        <!-- cards 4-->
+        <div class="flex flex-col justify-center align-middle">
+          <!-- image -->
+          <img
+            src="../images/immigration.svg"
+            class="max-w-[200px] self-center"
+            alt=""
+          />
+          <!-- details -->
+          <div class="max-w-[266px]">
+            <h3 class="font-Syne font-semibold text-[23px] text-textPrimary">
+              4. Immigration
+            </h3>
+            <p class="font-Inter text-[16px] text-textSecondary">
+              Our immigration support ensures a smooth transition. From visa
+              paperwork to cultural insights, we’re here. Welcome to your new
+              healing home! 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

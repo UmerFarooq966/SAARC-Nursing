@@ -8,9 +8,18 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+    
     extend: {
       colors: {
-        picBlack: "#080c0b",
+        primaryBlue: "#1054F1",
+        textPrimary: "#292E3D",
+        textSecondary: "#525D81",
+        btnBg: "#292E3D",
+        bgBlue: "#F3F7FA",
+      },
+      fontFamily:{
+        'Inter': ['Inter', "sans-serif"],
+        'Syne': ['Syne', "sans-serif"],
       },
     },
   },
