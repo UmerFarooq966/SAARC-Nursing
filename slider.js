@@ -1,3 +1,4 @@
+
 const config = {
     type: 'carousel',
     startAt: 0,
