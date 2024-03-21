@@ -581,6 +581,10 @@ video {
   z-index: 20;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
 .-my-14{
   margin-top: -3.5rem;
   margin-bottom: -3.5rem;
@@ -645,6 +649,18 @@ video {
   margin-top: 1rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -683,6 +699,10 @@ video {
 
 .w-auto{
   width: auto;
+}
+
+.w-1{
+  width: 0.25rem;
 }
 
 .max-w-32{
@@ -741,9 +761,55 @@ video {
   max-width: 80%;
 }
 
+.max-w-1{
+  max-width: 0.25rem;
+}
+
+.max-w-\[\]{
+  max-width: ;
+}
+
+.max-w-\[65\%\]{
+  max-width: 65%;
+}
+
+.max-w-\[40\%\]{
+  max-width: 40%;
+}
+
+.max-w-\[55\%\]{
+  max-width: 55%;
+}
+
+.max-w-\[500px\]{
+  max-width: 500px;
+}
+
+.max-w-\[450px\]{
+  max-width: 450px;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
+.border-spacing-6{
+  --tw-border-spacing-x: 1.5rem;
+  --tw-border-spacing-y: 1.5rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .grid-cols-2{
@@ -802,6 +868,14 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -809,6 +883,10 @@ video {
 
 .gap-y-20{
   row-gap: 5rem;
+}
+
+.self-end{
+  align-self: flex-end;
 }
 
 .self-center{
@@ -839,8 +917,21 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-l-lg{
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
 .border{
   border-width: 1px;
+}
+
+.border-8{
+  border-width: 8px;
+}
+
+.border-4{
+  border-width: 4px;
 }
 
 .border-b{
@@ -849,6 +940,10 @@ video {
 
 .border-l-4{
   border-left-width: 4px;
+}
+
+.border-l-8{
+  border-left-width: 8px;
 }
 
 .border-solid{
@@ -943,6 +1038,10 @@ video {
 
 .p-3{
   padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-12{
@@ -1096,6 +1195,34 @@ video {
   padding-top: 1.75rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pr-12{
+  padding-right: 3rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pl-24{
+  padding-left: 6rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pb-14{
+  padding-bottom: 3.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1176,6 +1303,10 @@ video {
   font-weight: 500;
 }
 
+.font-normal{
+  font-weight: 400;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -1230,6 +1361,12 @@ video {
   color: rgb(226 232 240 / var(--tw-placeholder-opacity));
 }
 
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .ring-blue-400{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity));
@@ -1272,6 +1409,54 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.marker\:line-clamp-6 *::marker{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.marker\:border-4 *::marker{
+  border-width: 4px;
+}
+
+.marker\:text-lg *::marker{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.marker\:font-bold *::marker{
+  font-weight: 700;
+}
+
+.marker\:text-primaryBlue *::marker{
+  color: rgb(16 84 241 );
+}
+
+.marker\:line-clamp-6::marker{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.marker\:border-4::marker{
+  border-width: 4px;
+}
+
+.marker\:text-lg::marker{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.marker\:font-bold::marker{
+  font-weight: 700;
+}
+
+.marker\:text-primaryBlue::marker{
+  color: rgb(16 84 241 );
 }
 
 .hover\:scale-125:hover{
