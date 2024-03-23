@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <script
+      src="https://kit.fontawesome.com/81b2a91ac0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="font-Inter font-medium z-20">
+      <div
+        class="flex flex-row justify-between align-middle bg-bgBlue py-[16px] px-[128px]"
+      >
+        <!-- LOGO -->
+        <div>
+          <img src="../images/Logo.png" class="max-w-60" alt="Logo" />
+        </div>
+        <!-- Menu -->
+        <div
+          id="menu"
+          class="sm:hidden md:flex md:flex-row md:gap-4 md:self-center"
+        >
+          <a
+            href="./index.html"
+            class="hover:duration-600 ease-in-out hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 ease-in-out hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Countries</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Immigration</a
+          >
+          <a
+            href="./about-us.html"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >About</a
+          >
+          <a
+            href="contact-us.html"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Contact</a
+          >
+        </div>
+        <!-- Actions -->
+        <div id="Actions" class="self-center flex gap-x-6">
+          <a href="">
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full hover:ease-in-out hover:duration-500 focus:outline-none focus:ring focus:ring-blue-200"
+            >
+              Login
+            </button>
+          </a>
+          <a href="">
+            <button
+              class="bg-blue-500 hover:bg-blue-900 text-white py-2 px-4 border border-blue-700 rounded-full active:ring-2 ring-blue-400 ring-opacity-60"
+            >
+              Register
+            </button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Form  -->
+    <section id="form" class="bg-bgBlue px-32 py-12">
+      <!-- grid -->
+      <div class="flex flex-row justify-between">
+        <!-- contact form -->
+        <div>
+          <h1 class="font-Syne font-bold text-5xl text-primaryBlue flex">
+            Contact Us
+          </h1>
+          <h2 class="font-Syne font-bold text-4xl text-textPrimary flex">
+            Tell us what you really want
+          </h2>
+          <!-- Form -->
+          <div>
+            <form>
+              <div class="flex flex-col gap-6 max-w-[70%] font-Inter">
+                <!-- Name -->
+                <div class="pt-8">
+                  <label
+                    for="name"
+                    class="block pl-2 text-sm font-bold text-textPrimary"
+                    >Full Name</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      autocomplete="name"
+                      placeholder="Name"
+                      required
+                      class="block w-full rounded-full bg-transparent border-0 pl-3 py-2.5 text-textPrimary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:ring-2 hover:ring-primaryBlue"
+                    />
+                  </div>
+                </div>
+                <!-- email -->
+                <div>
+                  <label
+                    for="email"
+                    class="block pl-2 text-sm font-bold text-textPrimary"
+                    >Email address</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="Email"
+                      required
+                      class="block w-full rounded-full bg-transparent border-0 pl-3 py-2.5 text-textPrimary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:ring-2 hover:ring-primaryBlue"
+                    />
+                  </div>
+                </div>
+                <!-- Phone Number -->
+                <div>
+                  <label
+                    for="number"
+                    class="block pl-2 text-sm font-bold text-textPrimary"
+                    >Phone Number</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="number"
+                      name="number"
+                      type="text"
+                      autocomplete="mobile"
+                      placeholder="Your Phone Number"
+                      required
+                      class="block w-full rounded-full bg-transparent border-0 pl-3 py-2.5 text-textPrimary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:ring-2 hover:ring-primaryBlue"
+                    />
+                  </div>
+                </div>
+                <!-- Speciality -->
+                <div>
+                  <label
+                    for="speciality"
+                    class="block pl-2 text-sm font-bold text-textPrimary"
+                    >Speciality</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="speciality"
+                      name="speciality"
+                      type="text"
+                      placeholder="Enter Your Speciality"
+                      required
+                      class="block w-full rounded-full bg-transparent border-0 pl-3 py-2.5 text-textPrimary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:ring-2 hover:ring-primaryBlue"
+                    />
+                  </div>
+                </div>
+
+                <!-- Comments -->
+                <div>
+                  <div class="flex justify-between">
+                    <label
+                      for="comments"
+                      class="block pl-2 text-sm font-bold text-textPrimary"
+                      >Comments</label
+                    >
+                    <p class="text-xs text-textSecondary pr-2">Optional</p>
+                  </div>
+                  <div class="mt-2">
+                    <input
+                      id="comments"
+                      name="comments"
+                      type="text"
+                      placeholder="Write Here"
+                      class="block w-full rounded-full bg-transparent border-0 pl-3 py-2.5 text-textPrimary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:ring-2 hover:ring-primaryBlue"
+                    />
+                  </div>
+                </div>
+                <p class="font-Inter font-normal text-textPrimary text-base">
+                  This site is protected by reCAPTCHA and the Google Privacy
+                  Policy and Terms of Service apply. <br />
+                  <br />
+                  By submitting your information via this form, you agree that
+                  you may be contacted by a member of our team via SMS, MMS,
+                  email or phone as outlined in our privacy policy.
+                </p>
+                <button
+                  type="submit"
+                  class="bg-primaryBlue py-2.5 hover:bg-blue-900 text-white px-4 border border-blue-700 rounded-full active:ring- 4 ring-blue-400 ring-opacity-60"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Contact info -->
+        <div class="flex flex-col gap-6 justify-center max-w-[57%]">
+          <!-- card -->
+          <div class="bg-white p-6 font-Inter flex flex-col gap-6 rounded-3xl">
+            <!-- address -->
+            <div class="flex gap-6 pb-6 border-b border-solid">
+              <!-- icon -->
+              <div class="">
+                <i
+                  class="fa-solid fa-location-dot text-lg bg-bgBlue py-4 px-[24px] text-primaryBlue rounded-full"
+                ></i>
+              </div>
+              <!-- detail -->
+              <div class="flex flex-col justify-between">
+                <h2 class="font-bold text-base text-textPrimary">Address</h2>
+                <address class="font-normal text-base text-textSecondary">
+                  1234 N Spring St, Los Angeles, CA 90012
+                </address>
+              </div>
+            </div>
+            <!-- email -->
+            <div class="flex gap-6 pb-6 border-b border-solid">
+              <!-- icon -->
+              <div class="">
+                <i
+                  class="fa-solid fa-envelope text-lg bg-bgBlue py-4 px-[22px] text-primaryBlue rounded-full"
+                ></i>
+              </div>
+              <!-- detail -->
+              <div class="flex flex-col justify-between">
+                <h2 class="font-bold text-base text-textPrimary">Email</h2>
+                <p class="font-normal text-base text-textSecondary">
+                  info@saarcnursingcouncil.com
+                </p>
+              </div>
+            </div>
+            <!-- phone -->
+            <div class="flex gap-6 pb-6 border-b border-solid">
+              <!-- icon -->
+              <div class="">
+                <i
+                  class="fa-solid fa-phone text-lg bg-bgBlue py-4 px-[22px] text-primaryBlue rounded-full"
+                ></i>
+              </div>
+              <!-- detail -->
+              <div class="flex flex-col justify-between">
+                <h2 class="font-bold text-base text-textPrimary">Phone</h2>
+                <p class="font-normal text-base text-textSecondary">
+                  +1 234 567 890
+                </p>
+              </div>
+            </div>
+
+            <!-- Follow Us -->
+            <h2 class="font-Syne font-semibold text-2xl text-primaryBlue">
+              Follow Us
+            </h2>
+            <!-- Social Icons -->
+            <div class="bg-bgBlue rounded-2xl py-6">
+              <div
+                class="flex flex-row justify-center gap-6 text-textSecondary"
+              >
+                <a href="#">
+                  <i
+                    class="fa-brands fa-facebook fa-lg hover:bg-gray-200 py-6 px-[16px] rounded-full"
+                  ></i>
+                </a>
+                <a href="#">
+                  <i
+                    class="fa-brands fa-instagram fa-lg hover:bg-gray-200 py-6 px-[16px] rounded-full"
+                  ></i>
+                </a>
+                <a href="#">
+                  <i
+                    class="fa-brands fa-twitter fa-lg hover:bg-gray-200 py-6 px-[16px] rounded-full"
+                  ></i>
+                </a>
+                <a href="#">
+                  <i
+                    class="fa-brands fa-youtube fa-lg hover:bg-gray-200 py-6 px-[12px] rounded-full"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-12 px-32 text-white bg-bgBlue">
+      <div class="bg-primaryBlue rounded-3xl px-28 py-16">
+        <!-- flex -->
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="max-w-[50%]">
+            <h2 class="font-Syne font-medium text-3xl pb-2">
+              Subscribe To Our Monthly Newsletter
+            </h2>
+            <p class="font-Inter font-light text-md">
+              Get updates from us about the latest jobs, vacancies and events
+              happening from SAARC Nursing Council.
+            </p>
+          </div>
+          <div class="self-center">
+            <!-- Input -->
+            <div class="relative">
+              <input
+                type="email"
+                class="pl-16 pr-4 py-3 placeholder-slate-200 border border-white border-opacity-50 bg-transparent rounded-full"
+                placeholder="Your email"
+              />
+              <div
+                class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"
+              >
+                <i class="fas fa-envelope text-slate-200"></i>
+              </div>
+              <button
+                class="px-5 py-[13px] -ml-16 bg-bgBlue font-Inter font-medium text-base text-black rounded-full hover:bg-blue-100 active:border-white active:border-opacity-50"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="flex flex-col justify-evenly text-center gap-6 py-14">
+        <img src="./images/Logo.png" class="max-w-32 self-center" alt="" />
+        <!-- address -->
+        <div
+          class="flex flex-row justify-center gap-10 pb-8 text-textSecondary"
+        >
+          <p>
+            <i class="px-3 fa-solid fa-location-dot"></i>1234 N Spring St, Los
+            Angeles, CA 90012
+          </p>
+          <p>
+            <i class="px-3 fa-solid fa-envelope"></i
+            >info@saarcnursingcouncil.com
+          </p>
+        </div>
+        <!-- Menu -->
+        <div
+          id="menu"
+          class="sm:hidden md:flex md:flex-row md:gap-10 md:self-center text-textPrimary"
+        >
+          <a
+            href="./index.html"
+            class="hover:duration-600 ease-in-out hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 ease-in-out hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Countries</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Immigration</a
+          >
+          <a
+            href="./about-us.html"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >About</a
+          >
+          <a
+            href="#"
+            class="hover:duration-600 hover:bg-[#dce0e2a8] px-6 py-4 rounded-full"
+            >Contact</a
+          >
+        </div>
+        <div
+          class="py-5 self-center w-72 border-b border-solid border-textSecondary border-opacity-20"
+        ></div>
+        <!-- socials -->
+        <div class="flex flex-row justify-center gap-20 text-textSecondary">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div
+        class="bg-bgBlue py-2 text-center font-Inter text-base text-[#A4B6D5]"
+      >
+        Copyright © 2024 Nursing Council | Powered by Nursing Council
+      </div>
+    </footer>
+  </body>
+</html>
